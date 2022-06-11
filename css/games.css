@@ -1,0 +1,41 @@
+#gameList {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    align-content: center;
+    align-items: center;
+}
+
+.gameItem {
+    background: #ffffff12;
+    width: 500px;
+    height: 320px;
+    margin: 8px;
+    padding: 12px;
+    display: flex;
+    flex-direction: column;
+}
+
+.gameTitle {
+    font-size: 32px;
+}
+
+.gameRelease:before {
+    content: 'Release Date: ';
+}
+
+.gameDesc {
+    margin-top: 13px;
+}
+
+.download {
+    margin-top: 12px;
+    background: #4a4a4a;
+    opacity: 0.5;
+    ;
+}
+
+.download:hover {
+    box-shadow: 0 0;
+    cursor: default;
+}

@@ -1,0 +1,25 @@
+.previewImg {
+    width: 1470px;
+    height: unset;
+}
+
+.founderList {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.founderItem {
+    margin: 8px;
+    background: #ffffff12;
+    padding: 10px;
+    width: 900px;
+}
+
+.founderName {
+    font-size: 1.4em;
+}
+
+.founderPosition {
+    color: #ffffff64;
+}

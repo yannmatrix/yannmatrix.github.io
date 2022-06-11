@@ -1,0 +1,160 @@
+@font-face {
+    font-family: 'Webfont';
+    src: url(./fonts/font1.ttf);
+}
+
+@font-face {
+    font-family: 'Webfont Fallback';
+    src: url(./fonts/font0.ttf);
+}
+
+* {
+    font-family: 'Webfont', 'Webfont Fallback', sans-serif;
+    color: #fff;
+    transition: .3s;
+    line-height: 2;
+}
+
+body {
+    background: #202020;
+    margin: 0;
+    overflow-x: hidden;
+}
+
+:root {
+    --accent: rgb(9, 148, 101);
+}
+
+a {
+    color: inherit;
+    text-decoration: none;
+}
+
+#navBar {
+    text-transform: uppercase;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding: 12px;
+    align-items: center;
+    top: 0;
+    position: sticky;
+    background: #00000085;
+    transition: .01s!important;
+}
+
+.navSection {
+    display: flex;
+    align-content: center;
+    align-items: center;
+}
+
+.navItem {
+    margin-left: 35px;
+    padding: 5px 10px;
+    border-radius: 4px;
+}
+
+.navItem.start {
+    margin-left: 0;
+}
+
+.button {
+    background: var(--accent);
+    padding: 5px 15px;
+    border-radius: 8px;
+    cursor: pointer;
+    border: 0;
+}
+
+.button:hover {
+    box-shadow: 0 0 0 4px #ffffff25;
+}
+
+.navItem:hover {
+    background: #ffffff12;
+}
+
+#section {
+    margin: 8px;
+    padding: 10px;
+    display: flex;
+    height: 200px;
+    justify-content: center;
+}
+
+.section-left {
+    padding: 10px;
+    border-radius: 4px 0 0 4px;
+    background: #ffffff12;
+    width: 770px;
+}
+
+.sectionBg {
+    width: 200px;
+    border-radius: 0 4px 4px 0;
+}
+
+.section-header {
+    font-size: 28px;
+    padding-bottom: 8px;
+    margin-bottom: 8px;
+}
+
+.dlLink {
+    color: var(--accent);
+}
+
+.message {
+    display: flex;
+    position: relative;
+    justify-content: center;
+    width: 100vw;
+    height: 700px;
+    background: linear-gradient(0, black, #0000);
+    align-items: center;
+}
+
+.preview {
+    width: 100vw;
+}
+
+.previewImg {
+    height: 900px;
+}
+
+.navItem.active {
+    border-bottom: 2px solid;
+}
+
+.pageHeader {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 300px;
+    flex-direction: column;
+}
+
+.pageTitle {
+    font-size: 48px;
+}
+
+.navItem.img {
+    width: 30px;
+    height: 30px;
+}
+
+.bottomTerms {
+    display: flex;
+    height: 200px;
+    background: #00000056;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.back {
+    border-bottom: 3px solid var(--accent);
+    padding: 8px;
+    margin-bottom: 12px;
+}
