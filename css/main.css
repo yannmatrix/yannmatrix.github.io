@@ -115,12 +115,8 @@ a {
     align-items: center;
 }
 
-.preview {
-    width: 100vw;
-}
-
 .previewImg {
-    height: 900px;
+    width: 100vw;
 }
 
 .navItem.active {
