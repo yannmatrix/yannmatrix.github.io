@@ -9,6 +9,7 @@
     <meta name="author" content="Decipher">
     <title> Login | Yannmatrix </title>
     <link rel="stylesheet" href="/css/main.css">
+    <link rel="stylesheet" href="/css/login.css">
     <script src="/scripts/script.js"></script>
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons+Outlined" rel="stylesheet">
@@ -18,21 +19,22 @@
 
 <body>
 
-    <nav id="navBar">
-        <div class="navSection-left navSection">
-            <img src="/img/resources/icon.png" alt="" class="navItem img start">
-            <a href="/founders.html" class="navItem start"> founders </a>
-            <a href="/games.html" class="navItem"> games </a>
-        </div>
-
-        <div class="navSection-right navSection">
-            <buttton class="login button"> Log In </buttton>
-        </div>
-
-    </nav>
-
     <div class="bodyHolder">
-
+        <div class="loginContainer">
+            <form action="" id="login" class="form">
+                <div class="formTitle"> Login </div>
+                <div class="formMessage formMessage-err"> Incorrect Username or Password</div>
+                <div class="formInputs">
+                    <input type="text" class="formInput" placeholder="Username" autofocus>
+                    <div class="formErrorMsg"> err 39 4D4</div>
+                </div>
+                <div class="formInputs">
+                    <input type="password" class="formInput" placeholder="Password" autofocus>
+                </div>
+                <button class="submitButton button" type="submit"> Log In </button>
+                <a href="./" class="formLink" id="createAccount"> Create New Account </a>
+            </form>
+        </div>
     </div>
 
     <div class="bottomTerms">

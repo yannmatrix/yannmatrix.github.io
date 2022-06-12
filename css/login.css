@@ -1,0 +1,31 @@
+body {
+    --color-primary: #008250;
+    --color-secondary: #003420;
+    --color-tertiary: #00e68e;
+    --color-err: #f55;
+    --color-success: #8effe1;
+}
+
+.bodyHolder {
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.loginContainer {
+    display: flex;
+    background: #ffffff45;
+    margin: 1rem;
+    padding: 2rem;
+    align-content: center;
+    align-items: center;
+    justify-content: center;
+}
+
+form {
+    width: calc(100vw - 40%);
+    max-width: calc(100vw - 40%);
+    height: calc(100vh - 40%);
+    max-height: calc(100vh - 40%);
+}
