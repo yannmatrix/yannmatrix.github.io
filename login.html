@@ -21,19 +21,21 @@
 
     <div class="bodyHolder">
         <div class="loginContainer">
-            <form action="" id="login" class="form">
+            <div id="login" class="form">
                 <div class="formTitle"> Login </div>
                 <div class="formMessage formMessage-err"> Incorrect Username or Password</div>
                 <div class="formInputs">
-                    <input type="text" class="formInput" placeholder="Username" autofocus>
-                    <div class="formErrorMsg"> err 39 4D4</div>
+                    <input type="text" class="formInput userInput" placeholder="Username" autofocus>
+                    <div class="formErrorMsg formMessage"> err 39 4D4</div>
                 </div>
                 <div class="formInputs">
-                    <input type="password" class="formInput" placeholder="Password" autofocus>
+                    <input type="password" class="formInput passwordInput" placeholder="Password" autofocus>
+                    <button class="seePassword" onclick="seePassword()">
+                        <div class="passwordIcon material-icons"> visibility_off </div>
+                    </button>
                 </div>
-                <button class="submitButton button" type="submit"> Log In </button>
-                <a href="./" class="formLink" id="createAccount"> Create New Account </a>
-            </form>
+                <button class="submitButton button" type="submit" onclick="userArray()"> Submit </button>
+            </div>
         </div>
     </div>
 
@@ -43,5 +45,9 @@
     </div>
 
 </body>
+
+<script>
+    var visible = 0;
+</script>
 
 </html>

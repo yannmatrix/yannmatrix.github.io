@@ -11,3 +11,56 @@ window.addEventListener("scroll", function() {
         navBar.style.padding = "12px";
     }
 })
+
+function seePassword() {
+    if (passwordInput.type === "password") {
+        passwordInput.type = "text";
+        passwordIcon.innerHTML = "visibility";
+    } else {
+        passwordInput.type = "password";
+        passwordIcon.innerHTML = "visibility_off";
+    }
+}
+
+function userArray() {
+    if (userInput.value === "GhostxRonin" && passwordInput.value === "imthebestattowerfall22") {
+        userName.innerHTML = "GhostxRonin";
+        pfpImg.src = "img/resources/users/ghostxronin.png";
+        loginButton.style.display = "none";
+        openThing();
+    }
+
+    if (userInput.value === "HinduNosan" && passwordInput.value === "50kgAllDay") {
+        userName.innerHTML = "HinduNosan";
+        pfpImg.src = "img/resources/users/hindunosan.png";
+        loginButton.style.display = "none";
+        openThing();
+    }
+
+    if (userInput.value === "yxnyans" && passwordInput.value === "ihaveacrushonventi") {
+        userName.innerHTML = "yxnyans";
+        pfpImg.src = "img/resources/users/yanna.png";
+        loginButton.style.display = "none";
+        openThing();
+    }
+
+    if (userInput.value === "Decipher" && passwordInput.value === "quandaledingleton") {
+        userName.innerHTML = "Decipher";
+        pfpImg.src = "img/resources/users/decipher.png";
+        loginButton.style.display = "none";
+        openThing();
+    }
+
+    if (userInput.value === "DigitalExcalibur" && passwordInput.value === "ispitrizzlmao") {
+        userName.innerHTML = "DigitalExcalibur";
+        pfpImg.src = "img/resources/users/digitalexcalibur.png";
+        loginButton.style.display = "none";
+        openThing();
+    } else {
+        openThing();
+    }
+}
+
+function openThing() {
+    loginHolder.classList.toggle("active");
+}

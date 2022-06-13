@@ -15,6 +15,7 @@
     <meta content="#099465" data-react-helmet="true" name="theme-color" />
     <title> Home | Yannmatrix </title>
     <link rel="stylesheet" href="/css/main.css">
+    <link rel="stylesheet" href="/css/login.css">
     <script src="/scripts/script.js"></script>
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons+Outlined" rel="stylesheet">
@@ -32,7 +33,12 @@
         </div>
 
         <div class="navSection-right navSection">
-            <buttton class="login button"> Log In </buttton>
+            <div class="userInfo">
+                <img src="" class="userImg">
+                <div class="userName"> Guest </div>
+            </div>
+
+            <buttton class="login button" onclick="openThing()"> Log In </buttton>
         </div>
 
     </nav>
@@ -63,6 +69,37 @@
         <div class="copyright">©2022 Decipher Development Inc., YANNMATRIX, All Rights Reserved </div>
     </div>
 
+    <div class="loginHolder">
+        <div class="loginContainer">
+            <div id="login" class="form">
+                <div class="formTitle"> Login </div>
+                <div class="formMessage formMessage-err"> Incorrect Username or Password</div>
+                <div class="formInputs">
+                    <input type="text" class="formInput userInput" placeholder="Username" autofocus>
+                </div>
+                <div class="formInputs">
+                    <input type="password" class="formInput passwordInput" placeholder="Password" autofocus>
+                    <button class="seePassword" onclick="seePassword()">
+                        <div class="passwordIcon material-icons"> visibility_off </div>
+                    </button>
+                </div>
+                <button class="submitButton button" type="submit" onclick="userArray()"> Submit </button>
+                <div class="close" onclick="openThing()"> Close </div>
+            </div>
+        </div>
+    </div>
+
 </body>
+
+<script>
+    let passwordIcon = document.querySelector(".passwordIcon");
+    let userInput = document.querySelector(".userInput");
+    let passwordInput = document.querySelector(".passwordInput");
+    let loginHolder = document.querySelector(".loginHolder");
+    let loginButton = document.querySelector(".login");
+    let userName = document.querySelector(".userName");
+    let pfpImg = document.querySelector(".userImg");
+    let formErr = document.querySelector(".formMessage-err");
+</script>
 
 </html>

@@ -6,26 +6,81 @@ body {
     --color-success: #8effe1;
 }
 
-.bodyHolder {
+::placeholder {
+    color: #e4e4e465;
+}
+
+.loginHolder {
+    position: fixed;
+    top: 0;
+    left: calc(100vw - 50%);
     height: 100vh;
     display: flex;
     align-items: center;
     justify-content: center;
+    display: none;
+}
+
+.loginHolder.active {
+    display: flex;
 }
 
 .loginContainer {
+    position: fixed;
     display: flex;
-    background: #ffffff45;
-    margin: 1rem;
-    padding: 2rem;
+    background: #00000094;
     align-content: center;
     align-items: center;
     justify-content: center;
+    width: calc(100vw - 20%);
+    height: calc(100vh - 20%);
+    border-radius: 8px;
 }
 
-form {
-    width: calc(100vw - 40%);
-    max-width: calc(100vw - 40%);
-    height: calc(100vh - 40%);
-    max-height: calc(100vh - 40%);
+.formTitle {
+    text-align: center;
+    font-size: 32px;
+    margin-bottom: 32px;
+}
+
+.formMessage {
+    display: none;
+}
+
+.formInput {
+    width: 40vw;
+    font-size: 25px;
+    border: 0;
+    border-radius: 4px;
+    outline: 0;
+    padding: 8px;
+    background: #ffffff21;
+    margin-top: 12px;
+}
+
+#login {
+    display: flex;
+    flex-direction: column;
+}
+
+.submitButton {
+    margin: 12px 0;
+    padding: 8px;
+    font-size: 23px;
+}
+
+.submitButton:hover {
+    box-shadow: 0 0;
+    background: #24b081;
+    font-size: 25px;
+}
+
+.seePassword {
+    background: #0000;
+    border: 0;
+}
+
+.seePassword:hover {
+    transform: scale(1.1);
+    cursor: pointer;
 }
