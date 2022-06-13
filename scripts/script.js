@@ -56,6 +56,13 @@ function userArray() {
         pfpImg.src = "img/resources/users/digitalexcalibur.png";
         loginButton.style.display = "none";
         openThing();
+    }
+
+    if (userInput.value === "Zamurasashi" && passwordInput.value === "silvertossl") {
+        userName.innerHTML = "Zamurasashi";
+        pfpImg.src = "img/resources/users/zamurasashi.png";
+        loginButton.style.display = "none";
+        openThing();
     } else {
         openThing();
     }
