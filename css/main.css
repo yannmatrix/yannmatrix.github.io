@@ -187,6 +187,7 @@ a {
     display: flex;
     flex-direction: column;
     background: #000000e9;
+    display: none;
 }
 
 .windowHeader {
