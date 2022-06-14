@@ -178,3 +178,20 @@ a {
     transform: scale(0.95);
     cursor: pointer;
 }
+
+.menuWindow {
+    position: fixed;
+    top: 0;
+    height: 100vh;
+    width: 900px;
+    display: flex;
+    flex-direction: column;
+    background: #000000e9;
+}
+
+.windowHeader {
+    font-size: 38px;
+    padding: 8px;
+    margin: 8px;
+    border-bottom: 2px solid;
+}

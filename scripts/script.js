@@ -58,7 +58,7 @@ function userArray() {
         openThing();
     }
 
-    if (userInput.value === "Zamurasashi" && passwordInput.value === "silvertossl") {
+    if (userInput.value === "Zamurasashi" && passwordInput.value === "jiggitydiggitysquandaleousIII") {
         userName.innerHTML = "Zamurasashi";
         pfpImg.src = "img/resources/users/zamurasashi.png";
         loginButton.style.display = "none";
