@@ -1,0 +1,21 @@
+.previewSection {
+    display: flex;
+    flex-direction: row;
+}
+
+.preview {
+    text-transform: uppercase;
+    margin: 8px;
+    width: 25%;
+    background: rgba(255, 255, 255, 0.386);
+    padding: 8px;
+}
+
+.previewTitle {
+    font-weight: bolder;
+    font-size: 20px;
+}
+
+.previewSub {
+    font-size: 12px;
+}

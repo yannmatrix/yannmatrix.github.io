@@ -27,47 +27,47 @@ function userArray() {
         userName.innerHTML = "GhostxRonin";
         pfpImg.src = "img/resources/users/ghostxronin.png";
         loginButton.style.display = "none";
-        openThing();
+        toggleLogin();
     }
 
     if (userInput.value === "HinduNosan" && passwordInput.value === "50kgAllDay") {
         userName.innerHTML = "HinduNosan";
         pfpImg.src = "img/resources/users/hindunosan.png";
         loginButton.style.display = "none";
-        openThing();
+        toggleLogin();
     }
 
     if (userInput.value === "yxnyans" && passwordInput.value === "ihaveacrushonventi") {
         userName.innerHTML = "yxnyans";
         pfpImg.src = "img/resources/users/yanna.png";
         loginButton.style.display = "none";
-        openThing();
+        toggleLogin();
     }
 
     if (userInput.value === "Decipher" && passwordInput.value === "quandaledingleton") {
         userName.innerHTML = "Decipher";
         pfpImg.src = "img/resources/users/decipher.png";
         loginButton.style.display = "none";
-        openThing();
+        toggleLogin();
     }
 
     if (userInput.value === "DigitalExcalibur" && passwordInput.value === "ispitrizzlmao") {
         userName.innerHTML = "DigitalExcalibur";
         pfpImg.src = "img/resources/users/digitalexcalibur.png";
         loginButton.style.display = "none";
-        openThing();
+        toggleLogin();
     }
 
     if (userInput.value === "Zamurasashi" && passwordInput.value === "jiggitydiggitysquandaleousIII") {
         userName.innerHTML = "Zamurasashi";
         pfpImg.src = "img/resources/users/zamurasashi.png";
         loginButton.style.display = "none";
-        openThing();
+        toggleLogin();
     } else {
-        openThing();
+        toggleLogin();
     }
 }
 
-function openThing() {
+function toggleLogin() {
     loginHolder.classList.toggle("active");
 }

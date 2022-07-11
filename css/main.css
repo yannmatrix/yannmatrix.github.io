@@ -54,6 +54,7 @@ a {
     margin-left: 35px;
     padding: 5px 10px;
     border-radius: 4px;
+    transition: .1s;
 }
 
 .navItem.start {
